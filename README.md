@@ -1,9 +1,10 @@
 # Ticket Management System
 
 A backend system designed to manage bus tickets, including features for user authentication, role-based management (admin and user), and ticket purchasing functionality.
-API DOC Link: https://web.postman.co/workspace/20995ec3-8afa-4fe0-9045-936f1b4a2a18/collection/24142074-0f1851a1-e064-4b64-98a4-b3d0caf975a5
----
 
+---
+**API DOC Link: https://web.postman.co/workspace/20995ec3-8afa-4fe0-9045-936f1b4a2a18/collection/24142074-0f1851a1-e064-4b64-98a4-b3d0caf975a5
+**
 ## **Features**
 
 ### **Core Functionalities**
@@ -105,7 +106,7 @@ To test the **Bus** and **Ticket** endpoints in Postman, and for **Users** provi
 **JSON Payload**:
 ```json
 {
-  "bus": "64cfa02e9b6a2b001c9a1a56", // Replace with a valid Bus ID from your database
+  "bus": "64cfa02e9b6a2b001c9a1a56", 
   "time": "2024-12-01T10:00:00.000Z",
   "price": 500,
   "seatNumber": "A1"
@@ -122,7 +123,7 @@ To test the **Bus** and **Ticket** endpoints in Postman, and for **Users** provi
 **JSON Payload**:
 ```json
 {
-  "ticketId": "64cfa12e7f4a9c001c9b2c57" // Replace with a valid Ticket ID from your database
+  "ticketId": "64cfa12e7f4a9c001c9b2c57" 
 }
 ```
 
