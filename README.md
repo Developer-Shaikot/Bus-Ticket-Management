@@ -84,10 +84,6 @@ This project is based on a ticket management system:
 3. **Run the Application**
    - Start the development server:
      ```bash
-     npm run dev
-     ```
-   - Start the production server:
-     ```bash
      npm start
      ```
 
@@ -101,25 +97,95 @@ This project is based on a ticket management system:
 Detailed API documentation is available via Postman:  
 [Postman API Documentation](https://web.postman.co/workspace/20995ec3-8afa-4fe0-9045-936f1b4a2a18/collection/24142074-0f1851a1-e064-4b64-98a4-b3d0caf975a5)
 
-### **Authentication APIs**
-- **POST** `/auth/register`: User registration.
-- **POST** `/auth/login`: User login.
-- **POST** `/auth/logout`: User logout.
-
-### **Admin APIs**
-- **POST** `/admin/bus`: Add a new bus.
-- **PUT** `/admin/bus/:id`: Update bus information.
-- **DELETE** `/admin/bus/:id`: Delete a bus.
-- **POST** `/admin/ticket`: Add a new ticket.
-- **PUT** `/admin/ticket/:id`: Update ticket information.
-- **DELETE** `/admin/ticket/:id`: Delete a ticket.
-
-### **User APIs**
-- **GET** `/buses`: View all available buses.
-- **GET** `/tickets`: View tickets for specific buses and time periods.
-- **POST** `/tickets/purchase`: Purchase a ticket.
+To test the **Bus** and **Ticket** endpoints in Postman, and for **Users** provided Screanshots of Postman on the upper section, you can use the following example JSON payloads for POST requests.
 
 ---
+
+### 1. **POST /admin/bus** - Add a New Bus
+**Endpoint**: /api/admin/bus  
+**Headers**:
+- Authorization: Bearer <your-token> (if isAuthenticated and isAdmin are required)
+
+**JSON Payload**:
+json
+{
+  "name": "Express Line",
+  "type": "AC",
+  "capacity": 45,
+  "route": "Dhaka to Chittagong",
+  "driver": "John Doe",
+  "contact": "1234567890"
+}
+
+
+---
+
+### 2. **POST /admin/ticket** - Add a New Ticket
+**Endpoint**: /api/admin/ticket  
+**Headers**:
+- Authorization: Bearer <your-token> (if isAuthenticated and isAdmin are required)
+
+**JSON Payload**:
+json
+{
+  "bus": "64cfa02e9b6a2b001c9a1a56", 
+  "time": "2024-12-01T10:00:00.000Z",
+  "price": 500,
+  "seatNumber": "A1"
+}
+
+
+---
+
+### 3. **POST /tickets/purchase** - Purchase a Ticket
+**Endpoint**: /api/tickets/purchase  
+**Headers**:
+- Authorization: Bearer <your-token> (if isAuthenticated is required)
+
+**JSON Payload**:
+json
+{
+  "ticketId": "64cfa12e7f4a9c001c9b2c57" 
+}
+
+
+---
+
+### Guidelines for Other Requests
+1. **PUT /admin/bus/:id** - Update Bus
+   **Endpoint**: /api/admin/bus/64cfa02e9b6a2b001c9a1a56 (replace id with the Bus ID)
+
+   **JSON Payload**:
+   
+json
+   {
+     "name": "Super Express Line",
+     "capacity": 50
+   }
+
+
+2. **PUT /admin/ticket/:id** - Update Ticket
+   **Endpoint**: /api/admin/ticket/64cfa12e7f4a9c001c9b2c57 (replace id with the Ticket ID)
+
+   **JSON Payload**:
+   
+json
+   {
+     "price": 600,
+     "seatNumber": "B2"
+   }
+
+
+3. **DELETE /admin/bus/:id** - Delete Bus
+   **Endpoint**: /api/admin/bus/64cfa02e9b6a2b001c9a1a56  
+   - No JSON payload is needed; send the request with the id in the URL.
+
+4. **DELETE /admin/ticket/:id** - Delete Ticket
+   **Endpoint**: /api/admin/ticket/64cfa12e7f4a9c001c9b2c57  
+   - No JSON payload is needed; send the request with the id in the URL.
+
+---
+
 
 ## **Database Design**
 ### **Entities**
