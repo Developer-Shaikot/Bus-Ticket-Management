@@ -5,6 +5,12 @@ A backend system designed to manage bus tickets, including features for user aut
 ---
 **POSTMAN API DOC Link: https://web.postman.co/workspace/20995ec3-8afa-4fe0-9045-936f1b4a2a18/collection/24142074-0f1851a1-e064-4b64-98a4-b3d0caf975a5
 **
+
+**ER Diagram**
+<div style="display: flex; flex-wrap: wrap; justify-content: space-between;">
+  <img src="https://res.cloudinary.com/ddlbvpfq1/image/upload/v1732913381/Ticket_Management_ERD_Modified.drawio_jmnnkr.png" alt="Image 1" style="width:48%; border: 1px solid black; margin-bottom: 10px;">
+</div>
+
 ## **Features**
 
 <div style="display: flex; flex-wrap: wrap; justify-content: space-between;">
