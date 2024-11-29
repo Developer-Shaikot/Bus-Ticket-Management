@@ -128,7 +128,7 @@ Detailed API documentation is available via Postman:
 **JSON Payload**:
 ```json
 {
-  "bus": "64cfa02e9b6a2b001c9a1a56", // Replace with a valid Bus ID from your database
+  "bus": "64cfa02e9b6a2b001c9a1a56",
   "time": "2024-12-01T10:00:00.000Z",
   "price": 500,
   "seatNumber": "A1"
@@ -145,7 +145,7 @@ Detailed API documentation is available via Postman:
 **JSON Payload**:
 ```json
 {
-  "ticketId": "64cfa12e7f4a9c001c9b2c57" // Replace with a valid Ticket ID from your database
+  "ticketId": "64cfa12e7f4a9c001c9b2c57" 
 }
 ```
 
