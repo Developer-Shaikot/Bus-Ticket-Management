@@ -3,8 +3,7 @@
 A backend system designed to manage bus tickets, including features for user authentication, role-based management (admin and user), and ticket purchasing functionality.
 
 ---
-**POSTMAN API DOC Link: https://web.postman.co/workspace/20995ec3-8afa-4fe0-9045-936f1b4a2a18/collection/24142074-0f1851a1-e064-4b64-98a4-b3d0caf975a5
-**
+**POSTMAN API DOC Link: https://web.postman.co/workspace/20995ec3-8afa-4fe0-9045-936f1b4a2a18/collection/24142074-0f1851a1-e064-4b64-98a4-b3d0caf975a5**
 
 **ER Diagram**
 <div style="display: flex; flex-wrap: wrap; justify-content: space-between;">
@@ -187,4 +186,3 @@ If you have any questions or issues, feel free to reach out:
 
 ---
 
-Let me know if you'd like further refinements or additional details in the README!
