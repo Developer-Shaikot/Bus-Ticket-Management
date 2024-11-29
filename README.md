@@ -20,6 +20,13 @@ This project is based on a ticket management system:
 
 ## **Features**
 
+<div style="display: flex; flex-wrap: wrap; justify-content: space-between;">
+  <img src="https://res.cloudinary.com/ddlbvpfq1/image/upload/v1732911723/SignUp-PoST_ovr1gf.png" alt="Image 1" style="width:48%; border: 1px solid black; margin-bottom: 10px;">
+  <img src="https://res.cloudinary.com/ddlbvpfq1/image/upload/v1732911723/Admin_SignIn_d28pio.png" alt="Image 2" style="width:48%; border: 1px solid black; margin-bottom: 10px;">
+  <img src="https://res.cloudinary.com/ddlbvpfq1/image/upload/v1732911723/Add_Buses_mlonxt.png" alt="Image 3" style="width:48%; border: 1px solid black;">
+  <img src="https://res.cloudinary.com/ddlbvpfq1/image/upload/v1732911723/Get_Buses_yybu1p.png" alt="Image 4" style="width:48%; border: 1px solid black;">
+</div>
+
 ### **Core Functionalities**
 1. **User Authentication**
    - User registration, login, and logout.
