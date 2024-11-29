@@ -6,8 +6,8 @@ let { addBus, updateBus, deleteBus, getBuses } = require("../controllers/busCont
 
 // Bus routes
 router.post("/admin/bus", isAuthenticated, isAdmin, addBus); // /api/admin/bus
-router.put("/admin/bus/:id", isAuthenticated, isAdmin, updateBus); // Update bus information
-router.delete("/admin/bus/:id", isAuthenticated, isAdmin, deleteBus); // Delete a bus
-router.get("/buses", getBuses); // Get all available buses
+router.put("/admin/bus/:id", isAuthenticated, isAdmin, updateBus); // /api/admin/bus/:id
+router.delete("/admin/bus/:id", isAuthenticated, isAdmin, deleteBus); // /api/admin/bus/:id
+router.get("/buses", getBuses); // /api/buses
 
 module.exports = router;
