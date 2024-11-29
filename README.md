@@ -8,7 +8,7 @@ A backend system designed to manage bus tickets, including features for user aut
 
 **ER Diagram**
 <div style="display: flex; flex-wrap: wrap; justify-content: space-between;">
-  <img src="https://res.cloudinary.com/ddlbvpfq1/image/upload/v1732913381/Ticket_Management_ERD_Modified.drawio_jmnnkr.png" alt="Image 1" style="width:48%; border: 1px solid black; margin-bottom: 10px;">
+  <img src="https://res.cloudinary.com/ddlbvpfq1/image/upload/v1732913743/Ticket_Management_ERD_Modified.drawio_us6tag.png" alt="Image 1" style="width:48%; border: 1px solid black; margin-bottom: 10px;">
 </div>
 
 ## **Features**
