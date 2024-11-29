@@ -153,7 +153,7 @@ Detailed API documentation is available via Postman:
 
 ### Guidelines for Other Requests
 1. **PUT /admin/bus/:id** - Update Bus
-   **Endpoint**: `/api/admin/bus/64cfa02e9b6a2b001c9a1a56` (replace `id` with the Bus ID)
+   **Endpoint**: `/api/admin/bus/64cfa02e9b6a2b001c9a1a56`
 
    **JSON Payload**:
    ```json
@@ -164,7 +164,7 @@ Detailed API documentation is available via Postman:
    ```
 
 2. **PUT /admin/ticket/:id** - Update Ticket
-   **Endpoint**: `/api/admin/ticket/64cfa12e7f4a9c001c9b2c57` (replace `id` with the Ticket ID)
+   **Endpoint**: `/api/admin/ticket/64cfa12e7f4a9c001c9b2c57`
 
    **JSON Payload**:
    ```json
