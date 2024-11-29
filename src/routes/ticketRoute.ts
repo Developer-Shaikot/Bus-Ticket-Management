@@ -10,10 +10,9 @@ import {
 } from "../controllers/ticketController";
 
 // Ticket routes
-router.post("/admin/ticket", isAuthenticated, isAdmin, addTicket); // Upload a new ticket
+router.post("/admin/ticket", isAuthenticated, isAdmin, addTicket); // /api/admin/ticket
 router.put("/admin/ticket/:id", isAuthenticated, isAdmin, updateTicket); // Update ticket information
 router.delete("/admin/ticket/:id", isAuthenticated, isAdmin, deleteTicket); // Delete a ticket
 router.get("/tickets", getTickets); // Get available tickets for specific buses and time periods
-router.post("/tickets/purchase", isAuthenticated, purchaseTicket); // Purchase a ticket
-
+router.post("/tickets/purchase", isAuthenticated, purchaseTicket); // /api/tickets/purchase
 module.exports = router;
